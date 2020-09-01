@@ -1,0 +1,6 @@
+{
+  "Todo": [
+    { "text": "Room cleaning", "complete": false },
+    { "text": "Do work", "complete": false }
+  ]
+}
