@@ -16,12 +16,15 @@ export const AddTodoForm: React.FC<Props> = ({ addTodo }) => {
         />
         <button
           type="submit"
-          onClick={(e) => {
+           onClick={e => {
             e.preventDefault();
-            addTodo(text);
-            setText("");
+            if (text === "") {
+              alert("Input must be filled out");
+            } else {
+              addTodo(text);
+              setText("");
+            }
           }}
-        >
           Add Todo
         </button>
       </form>
